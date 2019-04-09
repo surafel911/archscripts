@@ -1,3 +1,3 @@
-curl -s -X GET https://aur.archlinux.org/packages.gz -o $HOME/.aurtools/packages.gz
-gunzip -f $HOME/.aurtools/packages.gz
-cat $HOME/.aurtools/packages | grep $1
+curl -s -X GET https://aur.archlinux.org/packages.gz -o $HOME/.archscripts/packages.gz
+gunzip -f $HOME/.archscripts/packages.gz
+cat $HOME/.archscripts/packages | grep $1
