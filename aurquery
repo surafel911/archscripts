@@ -1,0 +1,6 @@
+echo $1
+DESC=$(curl -s https://aur.archlinux.org/packages/$1 | grep description)
+DESC=$(echo $DESC | sed -r 's,\\[trn],,g')
+if [ ${#DESC} -ge 5 ]; then echo " $DESC"; exit
+else echo "No description."
+fi
