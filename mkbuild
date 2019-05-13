@@ -1,4 +1,2 @@
-mkdir $1
-cd $1
 mkdir ./src/ ./include/ ./test/ ./bin/
 cp /usr/local/etc/Makefile.tmp ./Makefile
